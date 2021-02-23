@@ -23,9 +23,7 @@ Add more general information about project. What the purpose of the project is? 
 
 ## Technologies
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* JavaScript ES6
 
 ## Setup
 
