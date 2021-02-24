@@ -1,20 +1,3 @@
-function getStarters(position) {
-    const player1 = this.position[Math.floor(Math.random() * 60)]
-    const remainingPlayers = this.position.filter(players => {
-        return players !== player1
-    })
-    const player2 = remainingPlayerss[Math.floor(Math.random() * 59)]
-    if (player1.rpm >= player2.rpm) {
-        team.push(player1)
-        bench.push(player2)
-    } else {
-        team.push(player2)
-        bench.push(player1)
-    }
-}
-
-
-
 const players = {
     pointGuards: [
         { name: `Stephen Curry`, position: `PG`, rpm: 7.72 },
@@ -421,33 +404,48 @@ const players = {
     generateTeam(name = "Your Team") {
         const team = []
         const bench = []
-        const pg1 = this.pointGuards[Math.floor(Math.random() * 60)]
-        const remainingPointGuards = this.pointGuards.filter(pg => {
-            return pg !== pg1
+        function getStarters(position) {
+            const player1 = position[Math.floor(Math.random() * 60)]
+            const remainingPlayers = position.filter(players => {
+                return players !== player1
+            })
+            const player2 = remainingPlayers[Math.floor(Math.random() * 59)]
+            if (player1.rpm >= player2.rpm) {
+                team.push(player1)
+                bench.push(player2)
+            } else {
+                team.push(player2)
+                bench.push(player1)
+            }
+        }        
+        getStarters(this.pointGuards)
+        getStarters(this.shootingGuards)
+        getStarters(this.smallForwards)
+        getStarters(this.powerForwards)
+        getStarters(this.centers)
+        const reserve1 = this.reserves[Math.floor(Math.random() * 90)]
+        let remainingReserves = this.reserves.filter(players => {
+            return players !== reserve1
         })
-        const pg2 = remainingPointGuards[Math.floor(Math.random() * 59)]
-        if (pg1.rpm >= pg2.rpm) {
-            team.push(pg1)
-            bench.push(pg2)
-        } else {
-            team.push(pg2)
-            bench.push(pg1)
+        const reserve2 = remainingReserves[Math.floor(Math.random() * 89)]
+        remainingReserves = this.reserves.filter(players => {
+            return players !== reserve2
+        })
+        const reserve3 = remainingReserves[Math.floor(Math.random() * 88)]
+        bench.push(reserve1)
+        bench.push(reserve2)
+        bench.push(reserve3)
+        bench.sort((a, b) => b.rpm - a.rpm)
+        for (let i = 0; i < bench.length; i++) {
+            team.push(bench[i])
         }
-        
-        team.push(this.shootingGuards[Math.floor(Math.random() * 60)].name)
-        team.push(this.shootingGuards[Math.floor(Math.random() * 60)].name)
-        team.push(this.smallForwards[Math.floor(Math.random() * 60)].name)
-        team.push(this.smallForwards[Math.floor(Math.random() * 60)].name)
-        team.push(this.powerForwards[Math.floor(Math.random() * 60)].name)
-        team.push(this.powerForwards[Math.floor(Math.random() * 60)].name)
-        team.push(this.centers[Math.floor(Math.random() * 60)].name)
-        team.push(this.centers[Math.floor(Math.random() * 60)].name)
-        team.push(this.reserves[Math.floor(Math.random() * 90)].name)
-        team.push(this.reserves[Math.floor(Math.random() * 90)].name)
-        team.push(this.reserves[Math.floor(Math.random() * 90)].name)
         return team
     },
     generateLeague() {}
 }
 
-console.log(players.generateTeam())
+const testTeam = players.generateTeam()
+
+for (let i = 0; i < testTeam.length; i++) {
+    console.log(testTeam[i])
+}
