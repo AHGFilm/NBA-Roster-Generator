@@ -460,6 +460,6 @@ const players = {
     generateLeague() {}
 }
 
-console.log(players.generateTeam())
 const testTeam = players.generateTeam()
+console.log(testTeam)
 document.getElementById('roster').textContent = testTeam
