@@ -439,13 +439,25 @@ const players = {
         for (let i = 0; i < bench.length; i++) {
             team.push(bench[i])
         }
-        return team
+        const message = `
+        Your roster:
+        PG - ${team[0].name}
+        SG - ${team[1].name}
+        SF - ${team[2].name}
+        PF - ${team[3].name}
+        C - ${team[4].name}
+        Bench - ${team[5].name}
+        Bench - ${team[6].name}
+        Bench - ${team[7].name}
+        Bench - ${team[8].name}
+        Bench - ${team[9].name}
+        Bench - ${team[10].name}
+        Bench - ${team[11].name}
+        Bench - ${team[12].name}
+        `
+        return message
     },
     generateLeague() {}
 }
 
-const testTeam = players.generateTeam()
-
-for (let i = 0; i < testTeam.length; i++) {
-    console.log(testTeam[i])
-}
+console.log(players.generateTeam())
