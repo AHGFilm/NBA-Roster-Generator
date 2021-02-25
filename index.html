@@ -7,7 +7,7 @@
     <body>
         <main>
             <h1>NBA Roster Generator</h1>
-            <button onclick="newTeam()">Click to generate your team</button>
+            <button onclick="document.querySelector('main').insertAdjacentHTML('beforeend', players.generateTeam())">Click to generate your team</button>
         </main>
         <script src="script.js"></script>
     </body>
