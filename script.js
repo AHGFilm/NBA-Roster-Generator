@@ -464,4 +464,7 @@ const players = {
 
 const testTeam = players.generateTeam()
 console.log(testTeam)
-document.querySelector('main').insertAdjacentHTML('beforeend', testTeam);
+function newTeam() {
+    document.querySelector('main').insertAdjacentHTML('beforeend', players.generateTeam())
+}
+document.querySelector('main').insertAdjacentHTML('beforeend', testTeam)
