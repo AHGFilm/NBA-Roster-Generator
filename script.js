@@ -440,20 +440,22 @@ const players = {
             team.push(bench[i])
         }
         const message = `
-        Your roster: <br>
-        PG - ${team[0].name}
-        SG - ${team[1].name}
-        SF - ${team[2].name}
-        PF - ${team[3].name}
-        C - ${team[4].name}
-        Bench - ${team[5].name}
-        Bench - ${team[6].name}
-        Bench - ${team[7].name}
-        Bench - ${team[8].name}
-        Bench - ${team[9].name}
-        Bench - ${team[10].name}
-        Bench - ${team[11].name}
-        Bench - ${team[12].name}
+        <h2>Your Roster</h2> <br>
+        <h3>Starting Lineup</h3> <br>
+        PG - ${team[0].name} <br>
+        SG - ${team[1].name} <br>
+        SF - ${team[2].name} <br>
+        PF - ${team[3].name} <br>
+        C - ${team[4].name} <br>
+        <h3>Bench</h3> <br>
+        ${team[5].position} - ${team[5].name} <br>
+        ${team[6].position} - ${team[6].name} <br>
+        ${team[7].position} - ${team[7].name} <br>
+        ${team[8].position} - ${team[8].name} <br>
+        ${team[9].position} - ${team[9].name} <br>
+        ${team[10].position} - ${team[10].name} <br>
+        ${team[11].position} - ${team[11].name} <br>
+        ${team[12].position} - ${team[12].name} <br>
         `
         return message
     },
