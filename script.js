@@ -440,7 +440,7 @@ const players = {
             team.push(bench[i])
         }
         const message = `
-        Your roster:
+        Your roster: <br>
         PG - ${team[0].name}
         SG - ${team[1].name}
         SF - ${team[2].name}
