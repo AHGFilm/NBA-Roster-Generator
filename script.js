@@ -461,10 +461,3 @@ const players = {
     },
     generateLeague() {}
 }
-
-const testTeam = players.generateTeam()
-console.log(testTeam)
-function newTeam() {
-    document.querySelector('main').insertAdjacentHTML('beforeend', players.generateTeam())
-}
-document.querySelector('main').insertAdjacentHTML('beforeend', testTeam)
