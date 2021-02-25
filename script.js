@@ -461,3 +461,4 @@ const players = {
 }
 
 console.log(players.generateTeam())
+document.getElementById('roster').textContent = players.generateTeam()
