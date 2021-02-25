@@ -461,4 +461,5 @@ const players = {
 }
 
 console.log(players.generateTeam())
-document.getElementById('roster').textContent = players.generateTeam()
+const testTeam = players.generateTeam()
+document.getElementById('roster').textContent = testTeam
