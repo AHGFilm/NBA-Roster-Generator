@@ -444,22 +444,22 @@ const players = {
         const roster = `<h2>Your Roster</h2>
         <section>
             <h3>Starting Lineup</h3>
-            PG - ${team[0].name} <br>
+            <p>PG - ${team[0].name} <br>
             SG - ${team[1].name} <br>
             SF - ${team[2].name} <br>
             PF - ${team[3].name} <br>
-            C - ${team[4].name}
+            C - ${team[4].name}</p>
         </section>
         <section>
             <h3>Bench</h3>
-            ${team[5].name} <br>
+            <p>${team[5].name} <br>
             ${team[6].name} <br>
             ${team[7].name} <br>
             ${team[8].name} <br>
             ${team[9].name} <br>
             ${team[10].name} <br>
             ${team[11].name} <br>
-            ${team[12].name}
+            ${team[12].name}</p>
         </section>`
         return roster
     },
