@@ -1,59 +1,30 @@
 # NBA Roster Generator
 
-> Randomly generates a new lineup of NBA players every time a user runs the program
+> Randomly generates a new lineup of NBA players every time a user clicks a button
 
 ## Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
-* [Inspiration](#inspiration)
 * [Contact](#contact)
-
-## General info
-
-Add more general information about project. What the purpose of the project is? Motivation?
-
-## Screenshots
-
-![Example screenshot](./img/screenshot.png)
 
 ## Technologies
 
 * JavaScript ES6
-
-## Setup
-
-Describe how to install / setup your local environement / add link to demo version.
-
-## Code Examples
-
-Show examples of usage:
-`put-your-code-here`
+* HTML 5
+* CSS 3
 
 ## Features
 
-List of features ready and TODOs for future development
-
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
-
 To-do list:
 
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Add a feature to randomize teams across the entire league
+* Allow the user to input jersey colors and change the appearance of the webpage when a roster is generated
 
 ## Status
 
 Project is: _in progress_
-
-## Inspiration
-
-Add here credits. Project inspired by..., based on...
 
 ## Contact
 

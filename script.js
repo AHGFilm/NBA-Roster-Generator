@@ -401,7 +401,7 @@ const players = {
         { name: `Matisse Thybulle`, position: `SG`, rpm: -2.38 },
         { name: `Sean McDermott`, position: `SG`, rpm: -2.39 }
     ],
-    generateTeam(name = "Your Team") {
+    generateTeam() {
         const team = []
         const bench = []
         function getStarters(position) {
@@ -423,6 +423,7 @@ const players = {
         getStarters(this.smallForwards)
         getStarters(this.powerForwards)
         getStarters(this.centers)
+
         const reserve1 = this.reserves[Math.floor(Math.random() * 90)]
         let remainingReserves = this.reserves.filter(players => {
             return players !== reserve1
@@ -439,8 +440,8 @@ const players = {
         for (let i = 0; i < bench.length; i++) {
             team.push(bench[i])
         }
-        const message = `
-        <h2>Your Roster</h2> <br>
+
+        const roster = `<h2>Your Roster</h2> <br>
         <h3>Starting Lineup</h3> <br>
         PG - ${team[0].name} <br>
         SG - ${team[1].name} <br>
@@ -455,9 +456,8 @@ const players = {
         ${team[9].name} <br>
         ${team[10].name} <br>
         ${team[11].name} <br>
-        ${team[12].name} <br>
-        `
-        return message
+        ${team[12].name} <br>`
+        return roster
     },
     generateLeague() {}
 }
