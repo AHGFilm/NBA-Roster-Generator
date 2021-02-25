@@ -448,16 +448,17 @@ const players = {
         PF - ${team[3].name} <br>
         C - ${team[4].name} <br>
         <h3>Bench</h3> <br>
-        ${team[5].position} - ${team[5].name} <br>
-        ${team[6].position} - ${team[6].name} <br>
-        ${team[7].position} - ${team[7].name} <br>
-        ${team[8].position} - ${team[8].name} <br>
-        ${team[9].position} - ${team[9].name} <br>
-        ${team[10].position} - ${team[10].name} <br>
-        ${team[11].position} - ${team[11].name} <br>
-        ${team[12].position} - ${team[12].name} <br>
+        ${team[5].name} <br>
+        ${team[6].name} <br>
+        ${team[7].name} <br>
+        ${team[8].name} <br>
+        ${team[9].name} <br>
+        ${team[10].name} <br>
+        ${team[11].name} <br>
+        ${team[12].name} <br>
         `
         return message
     },
     generateLeague() {}
 }
+
