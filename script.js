@@ -457,7 +457,7 @@ const players = {
         ${team[11].position} - ${team[11].name} <br>
         ${team[12].position} - ${team[12].name} <br>
         `
-        return message
+        return team
     },
     generateLeague() {}
 }
