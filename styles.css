@@ -3,9 +3,12 @@ main {
     text-align: center;
 }
 
+article {
+    text-align: center;
+}
+
 section {
     text-align: left;
-    width: 30%;
 }
 
 section h3 {
