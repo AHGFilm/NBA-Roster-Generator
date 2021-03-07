@@ -4,7 +4,7 @@ main {
 }
 
 article {
-    width: fit-content;
+    width: 225px;
     margin-left: auto;
     margin-right: auto;
 }
