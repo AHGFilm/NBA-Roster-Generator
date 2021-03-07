@@ -20,7 +20,6 @@
 To-do list:
 
 * Add a feature to randomize teams across the entire league
-* Allow the user to input jersey colors and change the appearance of the webpage when a roster is generated
 
 ## Status
 
